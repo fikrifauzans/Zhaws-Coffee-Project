@@ -63,3 +63,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 Ini feature login yang baru
 
 saya bernama LOREM IPSUM
+
+Contohnya:
+Lorem 
+Ipsum 
+Fadill
