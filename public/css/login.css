@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap");
+/* font-family: 'Roboto Slab', serif; */
+* {
+    font-family: "Roboto Slab", serif;
+}
+:root {
+    --red: #ff3c43;
+}
+
+.login {
+    height: 100vh;
+    object-fit: cover;
+    object-position: 100% 10%;
+    opacity: 70%;
+}
+
+.zhaws-tagline {
+    letter-spacing: 5px;
+}
+
+.zhaws-text {
+    font-weight: bold;
+    margin-top: 12%;
+    letter-spacing: 3px;
+}
+
+.login-form {
+    width: 80%;
+}
+
+.login-form > h2 {
+    font-size: 43px;
+    margin-top: 90px;
+    color: var(--red);
+}
+
+input {
+    all: unset;
+    padding: 10px 65% 10px 30px;
+    border: 1px solid var(--red);
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+
+/* input[type="text"]::placeholder {
+    text-align: right;
+    font-family: Roboto, "Font Awesome\ 5 Pro", sans-serif;
+    font-weight: 600;
+} */
+
+.username::before {
+    font-family: "Font Awesome 5 Brands" !important;
+    font-weight: 900;
+    content: "\f007";
+}
+
+input::placeholder {
+    color: var(--red);
+    opacity: 70%;
+    font-weight: 400;
+}
+
+.password-input {
+    position: absolute;
+    padding: 10px 50% 10px 30px;
+}
+
+.password-icon {
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 31px;
+    color: var(--red);
+    opacity: 70%;
+}
+
+.btn-login {
+    margin-top: 100px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--red);
+    color: white;
+}
+
+@media (min-width: 390px) {
+    .img-login {
+        display: none;
+    }
+    input {
+        all: unset;
+        padding: 10px 20% 10px 30px;
+        border: 1px solid var(--red);
+        border-radius: 50px;
+        margin-bottom: 40px;
+    }
+
+    .password-input {
+        position: absolute;
+        padding: 10px 15% 10px 30px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* ...; */
+    input {
+        all: unset;
+        padding: 10px 30% 10px 30px;
+        border: 1px solid var(--red);
+        border-radius: 50px;
+        margin-bottom: 40px;
+    }
+
+    .password-input {
+        position: absolute;
+        padding: 10px 23% 10px 30px;
+    }
+
+    .img-login {
+        display: inline;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    input {
+        all: unset;
+        padding: 10px 50% 10px 30px;
+        border: 1px solid var(--red);
+        border-radius: 50px;
+        margin-bottom: 40px;
+    }
+
+    .password-input {
+        position: absolute;
+        padding: 10px 38% 10px 30px;
+    }
+    /* ...; */
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* ...; */
+}
