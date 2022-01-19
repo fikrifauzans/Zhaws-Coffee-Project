@@ -9,31 +9,24 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Zhaaws | Home</title>
 </head>
 
 <body>
-    <section id=#navbar>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a href="#" class="navbar-brand">Zhaws Coffee</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    {{-- NAVBAR --}}
+    @include('layouts.partials.nav')
+    {{-- END NAVBAR --}}
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div>
-                    <ul class="navbar-nav mr-auto">
-                        <li class="navbar-item">asdas</li>
-                        <li class="navbar-item">asdas</li>
+    {{-- CONTENT --}}
+    @yield('content')
 
-                    </ul>
-                </div>
-            </div>
 
-        </nav>
-    </section>
+
+
 
 
 

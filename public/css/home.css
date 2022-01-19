@@ -1,0 +1,30 @@
+* {
+    font-family: "Roboto Slab", serif;
+}
+.banner-img {
+    border: 1px solid #e5e5e5;
+    border-radius: 40px;
+}
+.categories a {
+    color: black;
+    font-weight: 300;
+    font-size: 15px;
+}
+#category-img {
+    border-radius: 20px 0px 20px 0px;
+}
+
+.category-card img {
+    width: 150px;
+    height: 200px;
+}
+
+.product-img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+}
+.card-products a {
+    text-decoration: none;
+    color: black;
+}
