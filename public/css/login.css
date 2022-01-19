@@ -103,6 +103,18 @@ input::placeholder {
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     /* ...; */
+
+    .btn-login {
+        margin-top: 100px;
+        width: 200px;
+        padding: 10px;
+        border-radius: 50px;
+        background-color: var(--red);
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+
     input {
         all: unset;
         padding: 10px 30% 10px 30px;
@@ -135,10 +147,22 @@ input::placeholder {
         position: absolute;
         padding: 10px 38% 10px 30px;
     }
+
+    .admin {
+        margin-left: 0;
+    }
     /* ...; */
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     /* ...; */
+    .admin {
+        margin-left: 80px;
+    }
+
+    .password-input {
+        position: absolute;
+        padding: 10px 34.7% 10px 30px;
+    }
 }

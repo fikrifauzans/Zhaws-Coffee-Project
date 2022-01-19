@@ -10,8 +10,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('/css/login.css') }}">
     <title>
-        Hello,
-        world!
+        Admin | Login
     </title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
@@ -24,7 +23,8 @@
     <section>
         <div class="container-fluid ">
             <div class="row ">
-                <div class="col-12 col-md-6 col-lg-6 p-0 img-login" data-aos=fade-right data-aos-duration="3000">
+                <div class="col-12 col-md-6 col-lg-6 p-0 img-login shadow-lg" data-aos=fade-right
+                    data-aos-duration="3000">
                     <img src="{{ asset('images/coffee/login.jpg') }}" class="login w-100 ">
                 </div>
 
@@ -42,26 +42,31 @@
                                     with
                                     quality
                                 </p>
-                                <h2 class="mb-4">
-                                    Admin
-                                    Login
-                                </h2>
-                                <label class="mb-4" for="">Login
-                                    to
-                                    your
-                                    account</label>
-                                <div class="username-form ">
-                                    <input style="font-family:'Font Awesome 5 Free' !important" type="text" name="email"
-                                        value="{{ old('email') }}" placeholder="&#xf007   Username Or Email" required>
-                                </div>
-                                <label class="mb-4" for="">Input
-                                    your
-                                    password</label>
-                                <div class="username-form form-password">
-                                    <input class="password-input" style="font-family:'Font Awesome 5 Free' !important"
-                                        value="{{ old('password') }}" name="password" type="password"
-                                        placeholder="       Password" required>
-                                    <i class="password-icon fas fa-lock"></i>
+
+                                <div class="admin mt-5">
+                                    <h2 class="mb-4" style="color:var(--red)">
+                                        Admin
+                                        Login
+                                    </h2>
+                                    <label class="mb-4" for="">Login
+                                        to
+                                        your
+                                        account</label>
+                                    <div class="username-form ">
+                                        <input style="font-family:'Font Awesome 5 Free' !important" type="text"
+                                            name="email" value="{{ old('email') }}"
+                                            placeholder="&#xf007   Username Or Email" required>
+                                    </div>
+                                    <label class="mb-4" for="">Input
+                                        your
+                                        password</label>
+                                    <div class="username-form form-password">
+                                        <input class="password-input"
+                                            style="font-family:'Font Awesome 5 Free' !important"
+                                            value="{{ old('password') }}" name="password" id="password"
+                                            type="password" placeholder="       Password" required onclick="hide()">
+                                        <i class="password-icon fas fa-lock lock"></i>
+                                    </div>
                                 </div>
                                 <button type="submit" class="btn-login mx-auto btn">Login</button>
                                 <small class="mx-auto" style="margin-top:100px">
@@ -100,6 +105,22 @@
     <script>
         AOS
             .init();
+    </script>
+
+    <script>
+        let pass;
+
+        function hide() {
+            $(document).ready(function() {
+                $('#password').keyup(function() {
+                    $('.lock').hide()
+                    pass = $(this).val();
+                    if (pass.length == 0) {
+                        $('.lock').show().delay(0);
+                    }
+                })
+            })
+        }
     </script>
 </body>
 
