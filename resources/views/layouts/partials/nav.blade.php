@@ -1,7 +1,8 @@
 <section id=#navbar>
-    <nav id='nav-parent' data-aos="fade-down" data-aos-duration="2500" class="navbar navbar-expand-lg navbar-light ">
+    <nav id='nav-parent' data-aos="fade-down" data-aos-duration="2000" class="navbar navbar-expand-lg navbar-light ">
         <div class="container w-80">
-            <div class="d-flex flex-column justify-content-center ">
+            <div class="d-flex flex-column justify-content-center " data-aos="fade-down" data-aos-easing="linear"
+                data-aos-duration="1500">
                 <a href="#" class="brand text-center">ZHAWS <span style="color: var(--red)">COFFEE</span></a>
                 <small class="text-center" style="font-size:12px; letter-spacing: 2px;">Crafted
                     with
@@ -15,10 +16,11 @@
             <div class="collapse navbar-collapse my-5 " id="navbarSupportedContent">
                 <div class="mx-auto ">
                     <ul class="navbar-nav  navbar-menu">
-                        <li><a href="/" id="{{ Request::is('/') ? 'act' : '' }}">Home</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li data-aos="zoom-in" data-aos-duration="1000"><a href="/"
+                                id="{{ Request::is('/') ? 'act' : '' }}">Home</a></li>
+                        <li data-aos="zoom-in" data-aos-duration="1500"><a href="#">Service</a></li>
+                        <li data-aos="zoom-in" data-aos-duration="2000"><a href="#">Products</a></li>
+                        <li data-aos="zoom-in" data-aos-duration="2500"><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div class=" d-flex flex-row src-form " id="cartAndSearch">
