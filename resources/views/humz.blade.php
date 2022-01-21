@@ -2,25 +2,26 @@
 @section('content')
     <div class="container ">
 
-        <div class="">
-            <img src="{{ asset('images/coffee/Banner.png') }}" class="img-fluid banner-img" alt="">
+        <div>
+            <img src="{{ asset('images/coffee/Banner.png') }}" class="img-fluid banner-img shadow-lg "
+                data-aos-duration="3000" data-aos="fade-up" alt="">
         </div>
 
         {{-- Category --}}
-        <div class="category-text d-flex justify-content-between my-5 my-0">
+        <div class=" category-text d-flex justify-content-between my-5 my-0">
             <p><b>Select Category</b></p>
             <a class="text-danger" href="">Show All</a>
         </div>
         <div class="categories">
             <div class="row ">
-                <div class="col-5 col-md-3 col-lg-2   category-card mr-2  ">
+                <div class="col-5 col-md-3 col-lg-2   category-card mr-2  " data-aos="flip-left" data-aos-duration="2000">
                     <a href="#" class="text-center " style="text-decoration: none;">
                         <img src="{{ asset('images/coffee/coffeeBeans.jpg') }}" class=" img-fluid" id="category-img">
                         <p class="text-center my-3">Coffee Beans</p>
                     </a>
                 </div>
 
-                <div class="col-5 col-md-3 col-lg-2   category-card mr-2">
+                <div class="col-5 col-md-3 col-lg-2   category-card mr-2" data-aos="flip-left" data-aos-duration="3000">
                     <a href="#" style="text-decoration: none;">
                         <img src="{{ asset('images/coffee/souvenirs.jpg') }}" class="mx-auto  img-fluid"
                             id="category-img">
@@ -38,7 +39,7 @@
             </div>
         </div>
         <div class=" row align-self-center">
-            <div class="col-5 col-md-5 col-lg-4 card-products mb-3">
+            <div class="col-5 col-md-5 col-lg-4 card-products mb-5">
                 <a href="#" class="text-decoration-none align-self-center">
                     <img class="img-fluid product-img mb-3"
                         src="{{ asset('images/coffee/daniel-tafjord-7GTxjNejlwg-unsplash.jpg') }}" alt="">

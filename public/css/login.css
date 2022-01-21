@@ -9,9 +9,13 @@
 
 .login {
     height: 100vh;
-    object-fit: cover;
-    object-position: 100% 10%;
+}
+
+.login img {
     opacity: 70%;
+    object-position: 100% 10%;
+    object-fit: cover;
+    height: 100vh;
 }
 
 .zhaws-tagline {
@@ -20,26 +24,14 @@
 
 .zhaws-text {
     font-weight: bold;
-    margin-top: 12%;
+    margin-top: 5%;
     letter-spacing: 3px;
-}
-
-.login-form {
-    width: 80%;
 }
 
 .login-form > h2 {
     font-size: 43px;
     margin-top: 90px;
     color: var(--red);
-}
-
-input {
-    all: unset;
-    padding: 10px 65% 10px 30px;
-    border: 1px solid var(--red);
-    border-radius: 50px;
-    margin-bottom: 40px;
 }
 
 /* input[type="text"]::placeholder {
@@ -60,11 +52,6 @@ input::placeholder {
     font-weight: 400;
 }
 
-.password-input {
-    position: absolute;
-    padding: 10px 50% 10px 30px;
-}
-
 .password-icon {
     position: absolute;
     margin-top: 14px;
@@ -82,28 +69,67 @@ input::placeholder {
     color: white;
 }
 
-@media (min-width: 390px) {
+@media (min-width: 270px) {
+    .login-form {
+        margin-top: 100px;
+        margin-bottom: auto;
+    }
+
     .img-login {
         display: none;
-    }
-    input {
-        all: unset;
-        padding: 10px 20% 10px 30px;
-        border: 1px solid var(--red);
-        border-radius: 50px;
-        margin-bottom: 40px;
     }
 
     .password-input {
         position: absolute;
-        padding: 10px 15% 10px 30px;
+        padding: 10px 110px 10px 30px;
+        width: 180px;
+    }
+
+    input {
+        all: unset;
+        padding: 10px 110px 10px 30px;
+        border: 1px solid var(--red);
+        border-radius: 50px;
+        margin-bottom: 40px;
+        width: 180px;
+    }
+
+    .xyz {
+        margin: auto;
     }
 }
 
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    /* ...; */
+@media (min-width: 575px) {
+    .login-form {
+        margin-top: 100px;
+        margin-bottom: auto;
+    }
+    .password-input {
+        position: absolute;
+        padding: 10px 180px 10px 30px;
+        width: 180px;
+    }
 
+    input {
+        all: unset;
+        padding: 10px 180px 10px 30px;
+        border: 1px solid var(--red);
+        border-radius: 50px;
+        margin-bottom: 40px;
+        width: 180px;
+    }
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 770px) {
+    /* ...; */
+    .login-form {
+        margin-top: 0;
+        margin-bottom: auto;
+    }
+
+    .img-login {
+        display: none;
+    }
     .btn-login {
         margin-top: 100px;
         width: 200px;
@@ -115,17 +141,19 @@ input::placeholder {
         justify-content: center;
     }
 
+    .password-input {
+        position: absolute;
+        padding: 10px 110px 10px 30px;
+        width: 180px;
+    }
+
     input {
         all: unset;
-        padding: 10px 30% 10px 30px;
+        padding: 10px 110px 10px 30px;
         border: 1px solid var(--red);
         border-radius: 50px;
         margin-bottom: 40px;
-    }
-
-    .password-input {
-        position: absolute;
-        padding: 10px 23% 10px 30px;
+        width: 180px;
     }
 
     .img-login {
@@ -135,34 +163,57 @@ input::placeholder {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .password-input {
+        position: absolute;
+        padding: 10px 150px 10px 30px;
+        width: 180px;
+    }
+
     input {
         all: unset;
-        padding: 10px 50% 10px 30px;
+        padding: 10px 150px 10px 30px;
         border: 1px solid var(--red);
         border-radius: 50px;
         margin-bottom: 40px;
+        width: 180px;
     }
 
-    .password-input {
-        position: absolute;
-        padding: 10px 38% 10px 30px;
-    }
-
-    .admin {
-        margin-left: 0;
-    }
     /* ...; */
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     /* ...; */
-    .admin {
-        margin-left: 80px;
-    }
 
     .password-input {
         position: absolute;
-        padding: 10px 34.7% 10px 30px;
+        padding: 10px 250px 10px 30px;
+        width: 180px;
+    }
+
+    input {
+        all: unset;
+        padding: 10px 230px 10px 30px;
+        border: 1px solid var(--red);
+        border-radius: 50px;
+        margin-bottom: 40px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .password-input {
+        position: absolute;
+        padding: 10px 250px 10px 30px;
+        width: 380px;
+    }
+
+    input {
+        all: unset;
+        padding: 10px 230px 10px 30px;
+        border: 1px solid var(--red);
+        border-radius: 50px;
+        margin-bottom: 40px;
+        width: 400px;
     }
 }

@@ -1,8 +1,8 @@
 <section id=#navbar>
-    <nav id='nav-parent' class="navbar navbar-expand-lg navbar-light bg-white ">
+    <nav id='nav-parent' data-aos="fade-down" data-aos-duration="2500" class="navbar navbar-expand-lg navbar-light ">
         <div class="container w-80">
             <div class="d-flex flex-column justify-content-center ">
-                <a href="#" class="brand text-center">Zhaws <span style="color: var(--red)">Coffee</span></a>
+                <a href="#" class="brand text-center">ZHAWS <span style="color: var(--red)">COFFEE</span></a>
                 <small class="text-center" style="font-size:12px; letter-spacing: 2px;">Crafted
                     with
                     quality</small>

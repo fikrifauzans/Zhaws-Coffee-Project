@@ -18,22 +18,22 @@
 
 </head>
 
-<body class="mh-100">
+<body>
 
     <section>
-        <div class="container-fluid ">
+        <div class=" container-fluid login">
             <div class="row ">
                 <div class="col-12 col-md-6 col-lg-6 p-0 img-login shadow-lg" data-aos=fade-right
                     data-aos-duration="3000">
-                    <img src="{{ asset('images/coffee/login.jpg') }}" class="login w-100 ">
+                    <img src="{{ asset('images/coffee/login.jpg') }}" class=" w-100 ">
                 </div>
 
-                <div class=" col-12 col-md-6 col-lg-6 p-0 mx-auto" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                <div class=" col-12 col-md-6 col-lg-6 my-auto" data-aos="flip-left" data-aos-easing="ease-out-cubic"
                     data-aos-duration="3000">
                     <form action=" {{ route('admin.login.submit') }}" method="post">@csrf
-                        <div class="container">
-                            <div class="d-flex flex-column login-form m-auto">
-                                <h1 class="text-center zhaws-text mb-0">
+                        <div class="container xyz">
+                            <div class="d-flex flex-column login-form mx-auto">
+                                <h1 class="text-center zhaws-text mt-3 mb-0">
                                     ZHAWS
                                     <span style="color:var(--red);">COFFEE</span>
                                 </h1>
@@ -43,7 +43,7 @@
                                     quality
                                 </p>
 
-                                <div class="admin mt-5">
+                                <div class="admin mt-5 ml-5">
                                     <h2 class="mb-4" style="color:var(--red)">
                                         Admin
                                         Login
@@ -69,7 +69,7 @@
                                     </div>
                                 </div>
                                 <button type="submit" class="btn-login mx-auto btn">Login</button>
-                                <small class="mx-auto" style="margin-top:100px">
+                                <small class="mx-auto" style="margin-top:10%;">
                                     forgot the
                                     password? <a href="#" style="color: var(--red)" class="create-account"><u>
                                             click here </u></a>to send your password by email!</small>
