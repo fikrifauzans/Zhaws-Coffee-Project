@@ -39,8 +39,31 @@
                     </div>
 
                 </div>
-                <div class="ml-auto" id="signup-btn">
-                    <a class="signup-btn" href="#">Sign Up</a>
+                <div class="ml-auto collapse navbar-collapse" id="signup-btn" id="navbarSupportedContent">
+
+                    @if (Auth::user())
+                        {{-- <form action="{{ route('logout') }}" method="post">@csrf
+                            <button id="user" type="submit">{{ auth()->user()->name }}</button>
+                        </form> --}}
+                        <ul class="navbar-nav ml-auto" id="user">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">{{ auth()->user()->name }}</a>
+                                <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                                    <form action="{{ route('logout') }}" method="post">@csrf
+                                        <button id="logout" class="navbar-item" type="submit">Logout</button>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    @else
+
+                        <a class="signup-btn ml-auto" href="/login">Login</a>
+
+
+
+                    @endif
                 </div>
             </div>
 

@@ -217,3 +217,12 @@ input::placeholder {
         width: 400px;
     }
 }
+
+.create-acc {
+    width: 150px;
+    font-size: 13px;
+    border-radius: 20px;
+    margin: 0 auto;
+    color: var(--red);
+    border: 1px solid var(--red);
+}

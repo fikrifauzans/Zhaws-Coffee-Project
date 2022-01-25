@@ -1,0 +1,20 @@
+#url {
+    margin-top: 150px;
+    color: #4e4e4e;
+}
+
+.parent-img > img {
+    object-fit: cover;
+    height: 500px;
+}
+
+.child-img > img {
+    height: 150px;
+    object-fit: cover;
+}
+
+#userReview > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}

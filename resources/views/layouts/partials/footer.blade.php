@@ -1,10 +1,10 @@
-<div class="container-fluid bg-light py-5">
+<div class="container-fluid bg-light py-5" data-aos="fade-up" data-aos-duration="1500">
     <div class="container ">
 
         <div class="row d-flex py-3 mx-auto">
 
             {{-- Social Media --}}
-            <div class="col-12 col-md-4 col-lg-4 " data-aos="fade-up" data-aos-duration="3000">
+            <div class="col-12 col-md-4 col-lg-4 ">
 
                 <div class="d-flex flex-column  mb-2">
                     <a href="#" class="brand ">ZHAWS <span style="color: var(--red)">COFFEE</span></a>
@@ -26,7 +26,7 @@
             </div>
 
             {{-- Info --}}
-            <div class="col-12 col-md-4 col-lg-4 m-auto" data-aos="fade-up" data-aos-duration="3000" id="footer-info">
+            <div class="col-12 col-md-4 col-lg-4 m-auto" id="footer-info">
                 <h5>SHOP</h5>
                 <ul>
                     <li><a href="">Location</a></li>
@@ -37,7 +37,7 @@
             </div>
 
             {{-- Contact --}}
-            <div class="col-12 col-md-4 col-lg-4 m-auto" data-aos="fade-up" data-aos-duration="3000" id="footer-info">
+            <div class="col-12 col-md-4 col-lg-4 m-auto" id="footer-info">
                 <h5>CONTACT</h5>
                 <ul>
                     <li><a href="">Email: Admin@admin.com</a></li>

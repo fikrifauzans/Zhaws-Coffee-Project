@@ -71,9 +71,7 @@
                                     forgot the
                                     password? <a href="#" style="color: var(--red)" class="create-account"><u>
                                             click here </u></a>to send your password by email!</small>
-                                <small class="create-acc btn  mt-2 text-center w-80"><a style="color:var(--red);"
-                                        href="/register">Create
-                                        Account</a> </small>
+                                <small class="create-acc btn  mt-2 text-center w-80">Create Account</small>
 
 
                             </div>

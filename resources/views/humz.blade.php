@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('content')
+    {{-- {{ dd($Products) }} --}}
     <div class="container ">
 
         <div>
@@ -39,80 +40,32 @@
             </div>
         </div>
         <div class=" row align-self-center">
-            <div class="col-5 col-md-5 col-lg-4 card-products mb-5">
-                <a href="#" class="text-decoration-none align-self-center">
-                    <img class="img-fluid product-img mb-3"
-                        src="{{ asset('images/coffee/daniel-tafjord-7GTxjNejlwg-unsplash.jpg') }}" alt="">
-                    <p>Roasted Beans Arabika Puntang</p>
-                    <p style="font-weight: 300;">Price: Rp. 120.000</p>
-                    <p><span class="text-danger ">Rating 135 <i class="far fa-star"></i>&ensp; </span> <b> ||
-                            &ensp;
-                            Sold 360</b></p>
-                </a>
+            @foreach ($Products as $product)
+                <div class="col-5 col-md-5 col-lg-4 card-products mb-5">
+                    <a href="#" class="text-decoration-none align-self-center">
+                        <img class="img-fluid product-img mb-3" src="{{ asset('images/coffee/' . $product->image) }}"
+                            alt="">
+                        <p>{{ $product->name }}</p>
+                        <p style="font-weight: 300;">Price: Rp. {{ $product->price }}</p>
+                        <p><span class="text-danger ">Rating {{ $product->rating }} <i class="far fa-star"></i>&ensp;
+                            </span>
+                            <b> ||
+                                &ensp;
+                                Sold {{ $product->sold }}</b>
+                        </p>
+                    </a>
+                </div>
+            @endforeach
+            <div class="mx-auto ">
+                {{ $Products->links() }}
             </div>
-            <div class="col-5 col-md-5 col-lg-4 card-products mb-3">
-                <a href="#" class="text-decoration-none align-self-center">
-                    <img class="img-fluid product-img mb-3"
-                        src="{{ asset('images/coffee/daniel-tafjord-7GTxjNejlwg-unsplash.jpg') }}" alt="">
-                    <p>Roasted Beans Arabika Puntang</p>
-                    <p style="font-weight: 300;">Price: Rp. 120.000</p>
-                    <p><span class="text-danger ">Rating 135 <i class="far fa-star"></i>&ensp; </span> <b> ||
-                            &ensp;
-                            Sold 360</b></p>
-                </a>
-            </div>
-            <div class="col-5 col-md-5 col-lg-4 card-products mb-3">
-                <a href="#" class="text-decoration-none align-self-center">
-                    <img class="img-fluid product-img mb-3"
-                        src="{{ asset('images/coffee/daniel-tafjord-7GTxjNejlwg-unsplash.jpg') }}" alt="">
-                    <p>Roasted Beans Arabika Puntang</p>
-                    <p style="font-weight: 300;">Price: Rp. 120.000</p>
-                    <p><span class="text-danger ">Rating 135 <i class="far fa-star"></i>&ensp; </span> <b> ||
-                            &ensp;
-                            Sold 360</b></p>
-                </a>
-            </div>
-            <div class="col-5 col-md-5 col-lg-4 card-products mb-3">
-                <a href="#" class="text-decoration-none align-self-center">
-                    <img class="img-fluid product-img mb-3"
-                        src="{{ asset('images/coffee/daniel-tafjord-7GTxjNejlwg-unsplash.jpg') }}" alt="">
-                    <p>Roasted Beans Arabika Puntang</p>
-                    <p style="font-weight: 300;">Price: Rp. 120.000</p>
-                    <p><span class="text-danger ">Rating 135 <i class="far fa-star"></i>&ensp; </span> <b> ||
-                            &ensp;
-                            Sold 360</b></p>
-                </a>
-            </div>
-            <div class="col-5 col-md-5 col-lg-4 card-products mb-3">
-                <a href="#" class="text-decoration-none align-self-center">
-                    <img class="img-fluid product-img mb-3"
-                        src="{{ asset('images/coffee/daniel-tafjord-7GTxjNejlwg-unsplash.jpg') }}" alt="">
-                    <p>Roasted Beans Arabika Puntang</p>
-                    <p style="font-weight: 300;">Price: Rp. 120.000</p>
-                    <p><span class="text-danger ">Rating 135 <i class="far fa-star"></i>&ensp; </span> <b> ||
-                            &ensp;
-                            Sold 360</b></p>
-                </a>
-            </div>
-            <div class="col-5 col-md-5 col-lg-4 card-products mb-3">
-                <a href="#" class="text-decoration-none align-self-center">
-                    <img class="img-fluid product-img mb-3"
-                        src="{{ asset('images/coffee/daniel-tafjord-7GTxjNejlwg-unsplash.jpg') }}" alt="">
-                    <p>Roasted Beans Arabika Puntang</p>
-                    <p style="font-weight: 300;">Price: Rp. 120.000</p>
-                    <p><span class="text-danger ">Rating 135 <i class="far fa-star"></i>&ensp; </span> <b> ||
-                            &ensp;
-                            Sold 360</b></p>
-                </a>
-            </div>
-
         </div>
 
 
         {{-- Create Here for paginator button --}}
     </div>
-    </div>
-    </div>
+
+
 
 
 
