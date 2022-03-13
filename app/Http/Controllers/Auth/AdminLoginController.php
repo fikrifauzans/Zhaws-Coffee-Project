@@ -29,7 +29,7 @@ class AdminLoginController extends Controller
         ]);
 
         if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password])) {
-            return redirect()->intended(route('admin.dashboard'));
+            return redirect()->intended(route('admin.HomeProduct'));
         }
 
         return redirect()->back()->withInput($request->only('email', 'remember'));

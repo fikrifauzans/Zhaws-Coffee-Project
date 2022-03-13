@@ -1,7 +1,8 @@
-<div class="container-fluid bg-light py-5" data-aos="fade-up" data-aos-duration="1500">
+<div class="footer container-fluid bg-light py-5 mt-auto min-vh-100" @stack('footer') data-aos="fade-up"
+    data-aos-duration="1500">
     <div class="container ">
 
-        <div class="row d-flex py-3 mx-auto">
+        <div class="row d-flex py-3 mx-auto ">
 
             {{-- Social Media --}}
             <div class="col-12 col-md-4 col-lg-4 ">

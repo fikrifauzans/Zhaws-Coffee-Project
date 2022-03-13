@@ -32,9 +32,15 @@
                         </form>
                     </div>
                     <div class="d-flex  src-form position-relative">
-                        <a href="/" class="ml-3 mr-3 mt-2 btn-cart">
+                        <a href="{{ url('cart') . '/' . (Auth::user()->id ?? '') }}" class="ml-3 mr-3 mt-2 btn-cart">
                             <i class="fas fa-cart-arrow-down"></i>
-                            <small class="count-cart position-absolute">11</small>
+                            @auth
+                                <small
+                                    {{ !Auth::user()->carts()->get()->sum('qty') == 0? Auth::user()->carts()->get()->sum('qty'): 'hidden' }}
+                                    class="count-cart position-absolute">
+                                    {{ Auth::user()->carts()->get()->sum('qty') }}
+                                </small>
+                            @endauth
                         </a>
                     </div>
 
@@ -50,19 +56,22 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">{{ auth()->user()->name }}</a>
-                                <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu text-center " aria-labelledby="navbarDropdown">
+                                    <form action="{{ url('user/info') }}" method="get">
+                                        <button id="logout" class="navbar-item text-center my-2"
+                                            type="submit">Info</button>
+                                    </form>
+                                    <form action="{{ url('user/history') }}" method="get">@csrf
+                                        <button id="logout" class="navbar-item my-2" type="submit">Riwayat</button>
+                                    </form>
                                     <form action="{{ route('logout') }}" method="post">@csrf
-                                        <button id="logout" class="navbar-item" type="submit">Logout</button>
+                                        <button id="logout" class="navbar-item my-2" type="submit">Logout</button>
                                     </form>
                                 </div>
                             </li>
                         </ul>
                     @else
-
                         <a class="signup-btn ml-auto" href="/login">Login</a>
-
-
-
                     @endif
                 </div>
             </div>

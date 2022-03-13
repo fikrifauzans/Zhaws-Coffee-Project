@@ -204,13 +204,13 @@ input::placeholder {
 @media (min-width: 1400px) {
     .password-input {
         position: absolute;
-        padding: 10px 250px 10px 30px;
+        padding: 10px 400px 10px 30px;
         width: 380px;
     }
 
     input {
         all: unset;
-        padding: 10px 230px 10px 30px;
+        padding: 10px 380px 10px 30px;
         border: 1px solid var(--red);
         border-radius: 50px;
         margin-bottom: 40px;

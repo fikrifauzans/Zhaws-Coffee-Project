@@ -1,0 +1,32 @@
+.img-cart > img {
+    width: 150px;
+    height: 100px;
+    padding: 5px;
+}
+
+.count button {
+    all: unset;
+    cursor: pointer;
+    border: 1px solid red;
+    padding: 5px 15px;
+    border-radius: 100%;
+    color: grey;
+    /* background-color: red; */
+}
+
+.count {
+    border: 1px solid rgb(218, 218, 218);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.count input {
+    all: unset;
+    width: 50px;
+    text-align: center;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
